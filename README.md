@@ -1,2 +1,3 @@
-# COMP710---S2
-Web Applications Assignments
+<div align="center">
+  <img src="ReadMe - Assets/images/readme.svg" alt="Comp710 ReadMe" />
+</div>
