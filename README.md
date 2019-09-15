@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="ReadMe - Assets/images/readme.svg" alt="Comp710 ReadMe" />
+  <img src="ReadMe - assets/images/ReadMe.svg" alt="Comp710 ReadMe" />
 </div>
