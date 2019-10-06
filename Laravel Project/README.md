@@ -37,11 +37,16 @@ By: Timothy. H | 14405064
   - Path: __C:\xampp\apache\conf\extra\httpd-vhosts.conf__
   - Copy in this code.
     <p>
-    ```
- <VirtualHost *:80>
-       DocumentRoot "C:/xampp/htdocs/BossCuts/public"
-       ServerName bosscuts.localhost
-     </VirtualHost>
+ ```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+```
+<VirtualHost *:80>
+DocumentRoot "C:/xampp/htdocs/BossCuts/public"
+ServerName bosscuts.localhost
+</VirtualHost>
 ```
 
 Launch the main URL and login with admin credentials
