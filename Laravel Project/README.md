@@ -1,11 +1,7 @@
 <!--
-SwarmNet Documentation
-By: Timothy. H
+BossCuts Documentation
+By: Timothy. H | 14405064
 -->
-
-<div align="center">
-  <img src="ReadMe - Assets/images/title-ccore.svg" alt="Collective Cores" />
-</div>
 
 <div align="center">
 
@@ -19,9 +15,9 @@ By: Timothy. H
 
 <div align="center">
 
-  **Collective Core** Insert Description
+  **BossCuts** Insert Description
 
-  <sub><i>Snapshot created by <u>@Timothy.H</u></i></sub>
+  <sub><i>Project created by <u>@Timothy.H | 14405064</u></i></sub>
 </div>
 
 <!--SectionEnd: Body -->
