@@ -36,23 +36,15 @@ By: Timothy. H | 14405064
 - Configure __httpd-vhosts.conf__.
   - Path: __C:\xampp\apache\conf\extra\httpd-vhosts.conf__
   - Copy in this code.
-    <p>
- ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
 ```
 <VirtualHost *:80>
-DocumentRoot "C:/xampp/htdocs/BossCuts/public"
-ServerName bosscuts.localhost
+ DocumentRoot "C:/xampp/htdocs/BossCuts/public"
+ ServerName bosscuts.localhost
 </VirtualHost>
 ```
-
-Launch the main URL and login with admin credentials
-credentials
-__admin@admin.com__ - __password__
-
+  - Using a browser connect to __bosscuts.localhost__ 
+  - Admin Credentials: __admin@admin.com__ - __password__
+  - Admin Credentials: __client1@email.com__ - __password__
 
 
 <!--SectionEnd: Body -->
