@@ -12,14 +12,10 @@ By: Timothy. H | 14405064
 </div>
 
 <!-- SectionStart: Body -->
-
-
-
-  **BossCuts** Insert Description
+ ##BossCuts Insert Description
+ -Project created by <u>@Timothy.H | 14405064</u>
   
-  <sub><i>Project created by <u>@Timothy.H | 14405064</u></i></sub>
-  
-  ## How to use
+ ## How to use
 
 - Clone the repository with __git clone__
 - Copy __.env.example__ file to __.env__ and edit database credentials there
