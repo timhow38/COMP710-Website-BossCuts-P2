@@ -13,7 +13,7 @@ By: Timothy. H | 14405064
 
 <!-- SectionStart: Body -->
 
-<div align="center">
+
 
   **BossCuts** Insert Description
   <sub><i>Project created by <u>@Timothy.H | 14405064</u></i></sub>
@@ -27,7 +27,7 @@ By: Timothy. H | 14405064
 - Run __php artisan migrate --seed__ (it has some seeded data for your testing)
 - That's it: launch the main URL and login with default credentials __admin@admin.com__ - __password__
 
-</div>
+
 
 <!--SectionEnd: Body -->
 
