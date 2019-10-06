@@ -4,8 +4,7 @@ By: Timothy. H | 14405064
 -->
 
 <div align="center">
-  **BossCuts** Insert Description
-  <sub><i>Project created by <u>@Timothy.H | 14405064</u></i></sub>
+
 <!-- Quick Links -->
 [![img-version-badge]][git-repo]
 [![img-server-badge]][git-server]
@@ -16,7 +15,8 @@ By: Timothy. H | 14405064
 
 <div align="center">
 
-
+  **BossCuts** Insert Description
+  <sub><i>Project created by <u>@Timothy.H | 14405064</u></i></sub>
   
   ## How to use
 
