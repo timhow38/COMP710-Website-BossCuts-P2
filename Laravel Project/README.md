@@ -25,7 +25,7 @@ By: Timothy. H | 14405064
 <!--
 Repo References
 -->
-[git-repo]:https://github.com/timhow38/SwarmNet
+[git-repo]:https://github.com/timhow38/COMP710-S2
 [git-server]:https://laravel.com/
 <!--
 Link References
