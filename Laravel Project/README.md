@@ -13,18 +13,35 @@ By: Timothy. H | 14405064
 
 <!-- SectionStart: Body -->
 
- ## BossCuts Insert Description
+ ## BossCuts - About
  
  - Project created by <u>@Timothy.H | 14405064</u>
   
- ## How to use
+ ## Project Setup
+- Clone the repository.
+- Command:__git clone__
 
-- Clone the repository with __git clone__
-- Copy __.env.example__ file to __.env__ and edit database credentials there
-- Run __composer install__
+- Copy __.env.example__ file to __.env__ and edit database credentials there. 
+- Command: __cp .env.example .env__
+
+- Download & Install Libraries.
+- Command: __composer install__
+
+- Generate .env Key
 - Run __php artisan key:generate__
-- Run __php artisan migrate --seed__ (it has some seeded data for your testing)
-- That's it: launch the main URL and login with default credentials __admin@admin.com__ - __password__
+
+- Setup Database from Migrations
+- Run __php artisan migrate --seed__ (it has some seeded data for testing)
+
+- Configure __httpd-vhosts.conf__.
+- Path: __C:\xampp\apache\conf\extra\httpd-vhosts.conf__
+- <VirtualHost *:80>
+    - DocumentRoot "C:/xampp/htdocs/BossCuts/public"
+    - ServerName bosscuts.localhost
+- </VirtualHost>
+Launch the main URL and login with admin credentials
+credentials
+__admin@admin.com__ - __password__
 
 
 
