@@ -19,13 +19,13 @@ By: Timothy. H | 14405064
   
  ## Project Setup
 - Clone the repository.
- - Command:__git clone__
+  - Command:__git clone__
 
 - Copy __.env.example__ file to __.env__ and edit database credentials there. 
- - Command: __cp .env.example .env__
+  - Command: __cp .env.example .env__
 
 - Download & Install Libraries.
- - Command: __composer install__
+  - Command: __composer install__
 
 - Generate .env Key
  - Run __php artisan key:generate__
