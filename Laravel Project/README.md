@@ -4,7 +4,8 @@ By: Timothy. H | 14405064
 -->
 
 <div align="center">
-
+  **BossCuts** Insert Description
+  <sub><i>Project created by <u>@Timothy.H | 14405064</u></i></sub>
 <!-- Quick Links -->
 [![img-version-badge]][git-repo]
 [![img-server-badge]][git-server]
@@ -15,9 +16,17 @@ By: Timothy. H | 14405064
 
 <div align="center">
 
-  **BossCuts** Insert Description
 
-  <sub><i>Project created by <u>@Timothy.H | 14405064</u></i></sub>
+  
+  ## How to use
+
+- Clone the repository with __git clone__
+- Copy __.env.example__ file to __.env__ and edit database credentials there
+- Run __composer install__
+- Run __php artisan key:generate__
+- Run __php artisan migrate --seed__ (it has some seeded data for your testing)
+- That's it: launch the main URL and login with default credentials __admin@admin.com__ - __password__
+
 </div>
 
 <!--SectionEnd: Body -->
