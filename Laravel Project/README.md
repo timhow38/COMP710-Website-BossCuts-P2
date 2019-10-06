@@ -31,4 +31,4 @@ Repo References
 Link References
 -->
 [img-version-badge]:https://img.shields.io/badge/RELEASE-V1.0.4-blue?logo=github&style=for-the-badge
-[img-server-badge]:https://img.shields.io/badge/VERSION-SERVER-brightgreen?logo=github&style=for-the-badge
+[img-server-badge]:https://img.shields.io/badge/FRAMEWORK-LARAVEL-brightgreen?logo=github&style=for-the-badge
