@@ -1,3 +1,6 @@
+.col-md-12 {
+    background-color:#fff;
+}
 @media print {
     body {
         background-color: #fff !important;
