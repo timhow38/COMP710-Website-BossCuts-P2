@@ -15,7 +15,7 @@
         <!-- If no success message in flash session show change password form  -->
         <div class="card card-default">
             <div class="card-header">
-                @lang('quickadmin.qa_edit')
+                @lang('barberadmin.qa_edit')
             </div>
 
             <div class="card-body">
@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        {!! Form::submit(trans('quickadmin.qa_save'), ['class' => 'btn btn-danger']) !!}
+        {!! Form::submit(trans('barberadmin.qa_save'), ['class' => 'btn btn-danger']) !!}
         {!! Form::close() !!}
     @endif
 @stop

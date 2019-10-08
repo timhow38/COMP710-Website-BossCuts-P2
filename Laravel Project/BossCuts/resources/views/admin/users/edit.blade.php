@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.users.title')</h3>
+    <h3 class="page-title">@lang('barberadmin.users.title')</h3>
     
     {!! Form::model($user, ['method' => 'PUT', 'route' => ['admin.users.update', $user->id]]) !!}
 
     <div class="card card-default">
         <div class="card-header">
-            @lang('quickadmin.qa_edit')
+            @lang('barberadmin.qa_edit')
         </div>
 
         <div class="card-body">
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    {!! Form::submit(trans('quickadmin.qa_update'), ['class' => 'btn btn-danger']) !!}
+    {!! Form::submit(trans('barberadmin.qa_update'), ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
 @stop
 

@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.appointments.title')</h3>
+    <h3 class="page-title">@lang('barberadmin.appointments.title')</h3>
     
     {!! Form::model($appointment, ['method' => 'PUT', 'route' => ['admin.appointments.update', $appointment->id]]) !!}
 
     <div class="card card-default">
         <div class="card-header">
-            @lang('quickadmin.qa_edit')
+            @lang('barberadmin.qa_edit')
         </div>
 
         <div class="card-body">
@@ -75,13 +75,13 @@
         </div>
     </div>
 
-    {!! Form::submit(trans('quickadmin.qa_update'), ['class' => 'btn btn-danger']) !!}
+    {!! Form::submit(trans('barberadmin.qa_update'), ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
 @stop
 
 @section('javascript')
     @parent
-    <script src="{{ url('quickadmin/js') }}/timepicker.js"></script>
+    <script src="{{ url('barberadmin/js') }}/timepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.4.5/jquery-ui-timepicker-addon.min.js"></script>
     <script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>    <script>
         $('.datetime').datetimepicker({

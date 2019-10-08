@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.working-hours.title')</h3>
+    <h3 class="page-title">@lang('barberadmin.working-hours.title')</h3>
     @can('working_hour_create')
     <p>
-        <a href="{{ route('admin.working_hours.create') }}" class="btn btn-success">@lang('quickadmin.qa_add_new')</a>
+        <a href="{{ route('admin.working_hours.create') }}" class="btn btn-success">@lang('barberadmin.qa_add_new')</a>
         
     </p>
     @endcan

@@ -5,7 +5,7 @@
     <li class="list-group-item{{ $request->segment(1) == 'home' ? 'active' : '' }}">
       <a href="{{ url('/') }}">
                     <i class="fa fa-wrench"></i>
-                    <span class="title">@lang('quickadmin.qa_dashboard')</span>
+                    <span class="title">@lang('barberadmin.qa_dashboard')</span>
                 </a>
     </li>
   </div>
@@ -14,7 +14,7 @@
     <li class="list-group-item{{ $request->segment(2) == 'clients' ? 'active' : '' }}">
       <a href="{{ route('admin.clients.index') }}">
                     <i class="fa fa-user"></i>
-                    <span class="title">@lang('quickadmin.clients.title')</span>
+                    <span class="title">@lang('barberadmin.clients.title')</span>
                 </a>
     </li>
   </div>
@@ -23,7 +23,7 @@
     <li class="list-group-item{{ $request->segment(2) == 'employees' ? 'active' : '' }}">
       <a href="{{ route('admin.employees.index') }}">
                     <i class="fa fa-suitcase"></i>
-                    <span class="title">@lang('quickadmin.employees.title')</span>
+                    <span class="title">@lang('barberadmin.employees.title')</span>
                 </a>
     </li>
   </div>
@@ -32,7 +32,7 @@
     <li class="list-group-item{{ $request->segment(2) == 'working_hours' ? 'active' : '' }}">
       <a href="{{ route('admin.working_hours.index') }}">
                     <i class="fa fa-hourglass"></i>
-                    <span class="title">@lang('quickadmin.working-hours.title')</span>
+                    <span class="title">@lang('barberadmin.working-hours.title')</span>
                 </a>
     </li>
   </div>
@@ -43,7 +43,7 @@
     <li class="list-group-item{{ $request->segment(2) == 'services' ? 'active' : '' }}">
       <a href="{{ route('admin.services.index') }}">
                     <i class="fa fa-hourglass"></i>
-                    <span class="title">@lang('quickadmin.services.title')</span>
+                    <span class="title">@lang('barberadmin.services.title')</span>
                 </a>
     </li>
   </div>
@@ -52,7 +52,7 @@
     <li class="list-group-item{{ $request->segment(2) == 'appointments' ? 'active' : '' }}">
       <a href="{{ route('admin.appointments.index') }}">
                       <i class="fa fa-calendar"></i>
-                      <span class="title">@lang('quickadmin.appointments.title')</span>
+                      <span class="title">@lang('barberadmin.appointments.title')</span>
                   </a>
     </li>
   </div>
@@ -66,47 +66,52 @@
     </li>
   </div>
   <div class="col">
-    <li>
+    <li class="list-group-item">
       <a href="#logout" onclick="$('#logout').submit();">
                     <i class="fa fa-arrow-left"></i>
-                    <span class="title">@lang('quickadmin.qa_logout')</span>
+                    <span class="title">@lang('barberadmin.qa_logout')</span>
                 </a>
     </li>
 
     {!! Form::open(['route' => 'auth.logout', 'style' => 'display:none;', 'id' => 'logout']) !!}
-    <button type="submit">@lang('quickadmin.logout')</button> {!! Form::close() !!}
+    <button type="submit">@lang('barberadmin.logout')</button> {!! Form::close() !!}
 
   </div>
 </div>
 
-@endcan @can('user_management_access')
-<li class="">
-  <a href="#">
-                        <i class="fa fa-users"></i>
-                        <span class="title">@lang('quickadmin.user-management.title')</span>
-                        <span class="fa arrow"></span>
-                    </a>
-  <ul class="sub-menu">
+  @endcan @can('user_management_access')
+  <li class="list-group-item">
+    <a href="#">
+                          <i class="fa fa-users"></i>
+                          <span class="title">@lang('barberadmin.user-management.title')</span>
+                          <span class="fa arrow"></span>
+                      </a>
+    <ul class="sub-menu">
 
-    @can('role_access')
-    <li class="list-group-item{{ $request->segment(2) == 'roles' ? 'active active-sub' : '' }}">
-      <a href="{{ route('admin.roles.index') }}">
-                                    <i class="fa fa-briefcase"></i>
-                                    <span class="title">
-                                @lang('quickadmin.roles.title')
-                            </span>
-                                </a>
-    </li>
-    @endcan @can('user_access')
-    <li class="list-group-item{{ $request->segment(2) == 'users' ? 'active active-sub' : '' }}">
-      <a href="{{ route('admin.users.index') }}">
-                                    <i class="fa fa-user"></i>
-                                    <span class="title">
-                                @lang('quickadmin.users.title')
-                            </span>
-                                </a>
-    </li>
-    @endcan
-  </ul>
-</li>
-@endcan
+      @can('role_access')
+      <li class="list-group-item{{ $request->segment(2) == 'roles' ? 'active active-sub' : '' }}">
+        <a href="{{ route('admin.roles.index') }}">
+                                      <i class="fa fa-briefcase"></i>
+                                      <span class="title">
+                                  @lang('barberadmin.roles.title')
+                              </span>
+                                  </a>
+      </li>
+      @endcan @can('user_access')
+      <li class="list-group-item{{ $request->segment(2) == 'users' ? 'active active-sub' : '' }}">
+        <a href="{{ route('admin.users.index') }}">
+                                      <i class="fa fa-user"></i>
+                                      <span class="title">
+                                  @lang('barberadmin.users.title')
+                              </span>
+                                  </a>
+      </li>
+      @endcan
+    </ul>
+  </li>
+  @endcan
+
+
+
+
+

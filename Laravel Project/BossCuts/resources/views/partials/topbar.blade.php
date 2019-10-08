@@ -4,7 +4,7 @@
             <div class="navbar-header">
                 <a href="{{ url('/admin/home') }}"
                    class="navbar-brand">
-                    @lang('quickadmin.quickadmin_title')
+                    @lang('barberadmin.barberadmin_title')
                 </a>
             </div>
             <a href="javascript:;"

@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.working-hours.title')</h3>
+    <h3 class="page-title">@lang('barberadmin.working-hours.title')</h3>
     {!! Form::open(['method' => 'POST', 'route' => ['admin.working_hours.store']]) !!}
 
     <div class="card card-default">
         <div class="card-header">
-            @lang('quickadmin.qa_create')
+            @lang('barberadmin.qa_create')
         </div>
         
         <div class="card-body">
@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    {!! Form::submit(trans('quickadmin.qa_save'), ['class' => 'btn btn-danger']) !!}
+    {!! Form::submit(trans('barberadmin.qa_save'), ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
 @stop
 
@@ -79,7 +79,7 @@
             dateFormat: "{{ config('app.date_format_js') }}"
         });
     </script>
-    <script src="{{ url('quickadmin/js') }}/timepicker.js"></script>
+    <script src="{{ url('barberadmin/js') }}/timepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.4.5/jquery-ui-timepicker-addon.min.js"></script>
     <script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>    <script>
         $('.timepicker').datetimepicker({

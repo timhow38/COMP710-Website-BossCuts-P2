@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.employees.title')</h3>
+    <h3 class="page-title">@lang('barberadmin.employees.title')</h3>
     {!! Form::open(['method' => 'POST', 'route' => ['admin.employees.store']]) !!}
 
     <div class="card card-default">
         <div class="card-header">
-            @lang('quickadmin.qa_create')
+            @lang('barberadmin.qa_create')
         </div>
         
         <div class="card-body">
@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    {!! Form::submit(trans('quickadmin.qa_save'), ['class' => 'btn btn-danger']) !!}
+    {!! Form::submit(trans('barberadmin.qa_save'), ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
 @stop
 

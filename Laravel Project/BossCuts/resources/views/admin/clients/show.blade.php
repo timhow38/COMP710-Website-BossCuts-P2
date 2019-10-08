@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.clients.title')</h3>
+    <h3 class="page-title">@lang('barberadmin.clients.title')</h3>
 
     <div class="card card-default">
         <div class="card-header">
-            @lang('quickadmin.qa_view')
+            @lang('barberadmin.qa_view')
         </div>
 
         <div class="card-body">
@@ -13,19 +13,19 @@
                 <div class="col-md-6">
                     <table class="table table-bordered table-striped">
                         <tr>
-                            <th>@lang('quickadmin.clients.fields.first-name')</th>
+                            <th>@lang('barberadmin.clients.fields.first-name')</th>
                             <td>{{ $client->first_name }}</td>
                         </tr>
                         <tr>
-                            <th>@lang('quickadmin.clients.fields.last-name')</th>
+                            <th>@lang('barberadmin.clients.fields.last-name')</th>
                             <td>{{ $client->last_name }}</td>
                         </tr>
                         <tr>
-                            <th>@lang('quickadmin.clients.fields.phone')</th>
+                            <th>@lang('barberadmin.clients.fields.phone')</th>
                             <td>{{ $client->phone }}</td>
                         </tr>
                         <tr>
-                            <th>@lang('quickadmin.clients.fields.email')</th>
+                            <th>@lang('barberadmin.clients.fields.email')</th>
                             <td>{{ $client->email }}</td>
                         </tr>
                     </table>
@@ -43,15 +43,15 @@
 <table class="table table-bordered table-striped {{ count($appointments) > 0 ? 'datatable' : '' }}">
     <thead>
         <tr>
-            <th>@lang('quickadmin.appointments.fields.client')</th>
-                        <th>@lang('quickadmin.clients.fields.last-name')</th>
-                        <th>@lang('quickadmin.clients.fields.phone')</th>
-                        <th>@lang('quickadmin.clients.fields.email')</th>
-                        <th>@lang('quickadmin.appointments.fields.employee')</th>
-                        <th>@lang('quickadmin.employees.fields.last-name')</th>
-                        <th>@lang('quickadmin.appointments.fields.start-time')</th>
-                        <th>@lang('quickadmin.appointments.fields.finish-time')</th>
-                        <th>@lang('quickadmin.appointments.fields.comments')</th>
+            <th>@lang('barberadmin.appointments.fields.client')</th>
+                        <th>@lang('barberadmin.clients.fields.last-name')</th>
+                        <th>@lang('barberadmin.clients.fields.phone')</th>
+                        <th>@lang('barberadmin.clients.fields.email')</th>
+                        <th>@lang('barberadmin.appointments.fields.employee')</th>
+                        <th>@lang('barberadmin.employees.fields.last-name')</th>
+                        <th>@lang('barberadmin.appointments.fields.start-time')</th>
+                        <th>@lang('barberadmin.appointments.fields.finish-time')</th>
+                        <th>@lang('barberadmin.appointments.fields.comments')</th>
                         <th>&nbsp;</th>
         </tr>
     </thead>
@@ -71,18 +71,18 @@
                                 <td>{!! $appointment->comments !!}</td>
                                 <td>
                                     @can('appointment_view')
-                                    <a href="{{ route('admin.appointments.show',[$appointment->id]) }}" class="btn btn-xs btn-primary">@lang('quickadmin.qa_view')</a>
+                                    <a href="{{ route('admin.appointments.show',[$appointment->id]) }}" class="btn btn-xs btn-primary">@lang('barberadmin.qa_view')</a>
                                     @endcan
                                     @can('appointment_edit')
-                                    <a href="{{ route('admin.appointments.edit',[$appointment->id]) }}" class="btn btn-xs btn-info">@lang('quickadmin.qa_edit')</a>
+                                    <a href="{{ route('admin.appointments.edit',[$appointment->id]) }}" class="btn btn-xs btn-info">@lang('barberadmin.qa_edit')</a>
                                     @endcan
                                     @can('appointment_delete')
                                     {!! Form::open(array(
                                         'style' => 'display: inline-block;',
                                         'method' => 'DELETE',
-                                        'onsubmit' => "return confirm('".trans("quickadmin.qa_are_you_sure")."');",
+                                        'onsubmit' => "return confirm('".trans("barberadmin.qa_are_you_sure")."');",
                                         'route' => ['admin.appointments.destroy', $appointment->id])) !!}
-                                    {!! Form::submit(trans('quickadmin.qa_delete'), array('class' => 'btn btn-xs btn-danger')) !!}
+                                    {!! Form::submit(trans('barberadmin.qa_delete'), array('class' => 'btn btn-xs btn-danger')) !!}
                                     {!! Form::close() !!}
                                     @endcan
                                 </td>
@@ -90,7 +90,7 @@
             @endforeach
         @else
             <tr>
-                <td colspan="9">@lang('quickadmin.qa_no_entries_in_table')</td>
+                <td colspan="9">@lang('barberadmin.qa_no_entries_in_table')</td>
             </tr>
         @endif
     </tbody>
@@ -100,7 +100,7 @@
 
             <p>&nbsp;</p>
 
-            <a href="{{ route('admin.clients.index') }}" class="btn btn-default">@lang('quickadmin.qa_back_to_list')</a>
+            <a href="{{ route('admin.clients.index') }}" class="btn btn-default">@lang('barberadmin.qa_back_to_list')</a>
         </div>
     </div>
 @stop

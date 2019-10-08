@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.appointments.title')</h3>
+    <h3 class="page-title">@lang('barberadmin.appointments.title')</h3>
     @can('appointment_create')
         <p>
             <a href="{{ route('admin.appointments.create') }}"
-               class="btn btn-success">@lang('quickadmin.qa_add_new')</a>
+               class="btn btn-success">@lang('barberadmin.qa_add_new')</a>
 
         </p>
     @endcan
       <div class="card card-default">
         <div class="card-header">
-            @lang('quickadmin.qa_list')
+            @lang('barberadmin.qa_list')
         </div>
 
         <div class="card-body table-responsive">
@@ -22,15 +22,15 @@
                         <th style="text-align:center;"><input type="checkbox" id="select-all"/></th>
                     @endcan
 
-                    <th>@lang('quickadmin.appointments.fields.client')</th>
-                    <th>@lang('quickadmin.clients.fields.last-name')</th>
-                    <th>@lang('quickadmin.clients.fields.phone')</th>
-                    <th>@lang('quickadmin.clients.fields.email')</th>
-                    <th>@lang('quickadmin.appointments.fields.employee')</th>
-                    <th>@lang('quickadmin.employees.fields.last-name')</th>
-                    <th>@lang('quickadmin.appointments.fields.start-time')</th>
-                    <th>@lang('quickadmin.appointments.fields.finish-time')</th>
-                    <th>@lang('quickadmin.appointments.fields.comments')</th>
+                    <th>@lang('barberadmin.appointments.fields.client')</th>
+                    <th>@lang('barberadmin.clients.fields.last-name')</th>
+                    <th>@lang('barberadmin.clients.fields.phone')</th>
+                    <th>@lang('barberadmin.clients.fields.email')</th>
+                    <th>@lang('barberadmin.appointments.fields.employee')</th>
+                    <th>@lang('barberadmin.employees.fields.last-name')</th>
+                    <th>@lang('barberadmin.appointments.fields.start-time')</th>
+                    <th>@lang('barberadmin.appointments.fields.finish-time')</th>
+                    <th>@lang('barberadmin.appointments.fields.comments')</th>
                     <th>&nbsp;</th>
                 </tr>
                 </thead>
@@ -55,19 +55,19 @@
                             <td>
                                 @can('appointment_view')
                                     <a href="{{ route('admin.appointments.show',[$appointment->id]) }}"
-                                       class="btn btn-xs btn-primary">@lang('quickadmin.qa_view')</a>
+                                       class="btn btn-xs btn-primary">@lang('barberadmin.qa_view')</a>
                                 @endcan
                                 @can('appointment_edit')
                                     <a href="{{ route('admin.appointments.edit',[$appointment->id]) }}"
-                                       class="btn btn-xs btn-info">@lang('quickadmin.qa_edit')</a>
+                                       class="btn btn-xs btn-info">@lang('barberadmin.qa_edit')</a>
                                 @endcan
                                 @can('appointment_delete')
                                     {!! Form::open(array(
                                         'style' => 'display: inline-block;',
                                         'method' => 'DELETE',
-                                        'onsubmit' => "return confirm('".trans("quickadmin.qa_are_you_sure")."');",
+                                        'onsubmit' => "return confirm('".trans("barberadmin.qa_are_you_sure")."');",
                                         'route' => ['admin.appointments.destroy', $appointment->id])) !!}
-                                    {!! Form::submit(trans('quickadmin.qa_delete'), array('class' => 'btn btn-xs btn-danger')) !!}
+                                    {!! Form::submit(trans('barberadmin.qa_delete'), array('class' => 'btn btn-xs btn-danger')) !!}
                                     {!! Form::close() !!}
                                 @endcan
                             </td>
@@ -75,7 +75,7 @@
                     @endforeach
                 @else
                     <tr>
-                        <td colspan="9">@lang('quickadmin.qa_no_entries_in_table')</td>
+                        <td colspan="9">@lang('barberadmin.qa_no_entries_in_table')</td>
                     </tr>
                 @endif
                 </tbody>
