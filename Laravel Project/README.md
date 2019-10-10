@@ -43,7 +43,7 @@ By: Timothy. H | 14405064
     </VirtualHost>
     ```
    - Using a browser connect to __bosscuts.localhost__ 
-   - Admin Credentials: __admin@admin.com__ - __password__
+   - Admin Credentials: __barber@admin.com__ - __password__
    - Admin Credentials: __client1@email.com__ - __password__
 
 
