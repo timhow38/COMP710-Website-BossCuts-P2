@@ -3,7 +3,7 @@ References: https://www.youtube.com/watch?v=Zca69OB2b0U
 # Start Instructions:
 
 Install Requirements
-> npm i angular/cli -g
+> npm install @angular/cli
 
 Create Framework
 > ng new angular-tour-of-heroes
