@@ -3,9 +3,11 @@ References: https://www.youtube.com/watch?v=Zca69OB2b0U
 # Start Instructions:
 
 Install Requirements
+> Download and install NodeJS: https://nodejs.org/dist/v13.1.0/node-v13.1.0-x64.msi
+OpenCMD and run:
 > npm install -g angular/cli
 
-Create Framework
+Create Framework - Create folder and run in CMD
 > ng new angular-tour-of-heroes
 > Routing = No
 > Select = SCSS
